@@ -13,8 +13,8 @@ const Detail = () => {
 
   // 4. 상세 페이지에 진입 하였을 때 데이터가 업데이트 되지 않음.
   useEffect(() => {
-    dispatch(getTodoByID(id), []);
-  });
+    dispatch(getTodoByID(id));
+  }, []);
   return (
     <StContainer>
       <StDialog>
